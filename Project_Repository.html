@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mirabelle's Project Repository</title>
     <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -20,6 +22,7 @@
             padding: 20px;
             font-size: 15px;
             max-width: 600px;
+            white-space: pre-wrap; 
         }
         .signature {
             text-align: right;
@@ -77,11 +80,11 @@
 </head>
 <body>
     <h1>Project Repository</h1>
-    <div class="greeting">
-        <p>Hi,<br>Thank you for visiting my project showcase. Here you'll find various analytical and programming projects I've worked on.<br>Enjoy exploring!</p>
-        <div class="signature">— Mirabelle</div>
+    <div class="greeting" id="greeting">
+        <!-- Greeting message will be displayed here -->
     </div>
-    <hr class = "line">
+    <div class="signature">— Mirabelle</div>
+    <hr class="line">
     <ul>
         <li>
             <a href="https://mirabelleding.github.io/projects/Data_Scraping_and_Predictive_Analytics_E450.html">
@@ -143,5 +146,38 @@
             </div>
         </li>
     </ul>
+    
+    <script>
+        const greetingElement = document.getElementById('greeting');
+        const greetingMessage = [
+            "\nHi,",
+            "Thank you for visiting my project showcase. Here you'll find various analytical and programming projects I've worked on.",
+            "Enjoy exploring!",
+            "\n				—— Mirabelle" 
+        ];
+
+        let lineIndex = 0;
+        let charIndex = 0;
+
+        function typeWriter() {
+            if (lineIndex < greetingMessage.length) {
+                if (charIndex < greetingMessage[lineIndex].length) {
+                    greetingElement.innerHTML += greetingMessage[lineIndex].charAt(charIndex);
+                    charIndex++;
+                    setTimeout(typeWriter, 40); // Adjust typing speed here
+                } else {
+                    greetingElement.innerHTML += "<br>"; // Move to the next line
+                    lineIndex++;
+                    charIndex = 0;
+                    setTimeout(typeWriter, 200); // Wait before starting the next line
+                }
+            }
+        }
+
+        // Start the typing effect when the window loads
+        window.onload = function() {
+            typeWriter();
+        };
+    </script>
 </body>
 </html>
