@@ -5355,10 +5355,10 @@ span.bp3-icon:empty{
   content:"⌄"; }
 
 .bp3-icon-caret-left::before{
-  content:"〈"; }
+  content:"〈"; }
 
 .bp3-icon-caret-right::before{
-  content:"〉"; }
+  content:"〉"; }
 
 .bp3-icon-caret-up::before{
   content:"⌃"; }
@@ -14535,6 +14535,18 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
     break-inside: avoid-page;
   }
 }
+    #returnLink {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-size: 14px;
+      color: #007bff;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    #returnLink:hover {
+      color: #0056b3;
+    }
 </style>
 
 <!-- Load mathjax -->
@@ -14572,7 +14584,13 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
     </script>
     <!-- End of mathjax configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
+  <span id="returnLink" onclick="returnToRepository()">Return to Repository</span>
 
+  <script>
+    function returnToRepository() {
+      window.location.href = 'https://mirabelleding.github.io/projects/Project_Repository';
+    }
+  </script>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
