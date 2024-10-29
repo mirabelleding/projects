@@ -282,6 +282,21 @@ display: inline;
 pre code {
 padding: 0;
 }
+    #returnLink {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-size: 14px;
+      color: #007bff;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    #returnLink:hover {
+      color: #0056b3;
+    }
+  .section h2 {
+    margin-top: 35px; 
+  }
 </style>
 
 
@@ -333,7 +348,13 @@ display: none;
 
 
 
+  <span id="returnLink" onclick="returnToRepository()">Return to Repository</span>
 
+  <script>
+    function returnToRepository() {
+      window.location.href = 'https://mirabelleding.github.io/projects/Project_Repository';
+    }
+  </script>
 </head>
 
 <body>
@@ -350,7 +371,6 @@ display: none;
 
 
 </div>
-
 
 <div id="stochastic-optimization-for-profit-maximization-and-revenue-modeling" class="section level2">
 <h2>Stochastic Optimization for Profit Maximization and
