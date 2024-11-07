@@ -86,8 +86,8 @@
     <hr class="line">
     <ul>
         <li>
-            <a href="https://mirabelleding.github.io/projects/Data_Scraping_and_Predictive_Analytics_E450.html">
-            Automated Data Extraction and Predictive Pricing Analysis of Mercedes-Benz E450 Coupes
+            <a href="https://mirabelleding.github.io/projects/text_mining_and_automobile_predictive_analytics.html">
+            Text Mining and Predictive Pricing Analysis of Mercedes-Benz E450 Coupes
             <i class="fas fa-link" style="margin-left: 5px;"></i>
             </a>
             <span class="date">— 10/2024</span>
@@ -96,12 +96,12 @@
                 <strong>Methodology:</strong>
                 <ul>
                     <li>Designed and implemented web scraping scripts using BeautifulSoup and requests to extract comprehensive data on Mercedes-Benz E450 Coupe listings from car marketplaces, targeting the Boston and Beverly Hills regions.</li>
-                    <li>Cleaned and processed the dataset by handling missing values, standardizing units, and extracting key information.</li>
+                    <li>Utilized text mining techniques to process and structure the extracted data by handling missing values, standardizing units, and extracting key information.</li>
                     <li>Conducted exploratory data analysis, including visualizations and correlation analysis, to uncover patterns in vehicle prices, mileage, and model year differences between the two regions.</li>
-                    <li>Applied multi-linear regression models to develop predictive models, comparing results between two markets to assess regional price depreciation.</li>
+                    <li>Applied Machine Learning Algorithms (Multi-Linear Regression) to develop predictive models, comparing results between two markets to assess regional price depreciation.</li>
                     <li>Developed a pricing prediction tool to provide quick estimates based on different mileage inputs, demonstrating the practical use of the model for potential buyers or sellers.</li>
                 </ul>
-                <strong>Skills Utilized:</strong> Web Scraping, Data Cleaning and Processing, Exploratory Data Analysis (EDA), Predictive Modelling, Statistical Analysis, Data Visualization
+                <strong>Skills Utilized:</strong> Python, Text Mining, Exploratory Data Analysis (EDA), Machine Learning (Multi-Linear Regression), Predictive Modelling, Data Visualization
             </div>
             <hr>
         </li>
