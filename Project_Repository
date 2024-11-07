@@ -87,12 +87,12 @@
     <ul>
         <li>
             <a href="https://mirabelleding.github.io/projects/text_mining_and_automobile_predictive_analytics.html">
-            Text Mining and Predictive Pricing Analysis of Mercedes-Benz E450 Coupes
+            Text Mining and Automobile Predictive Pricing Analytics
             <i class="fas fa-link" style="margin-left: 5px;"></i>
             </a>
             <span class="date">— 10/2024</span>
             <div class="description">
-                <strong>Objective:</strong> Extracted data on Mercedes-Benz E450 Coupes from online sources to analyze price trends and build predictive models for price estimation based on mileage and age.
+                <strong>Objective:</strong> Leveraged data mining to collect and analyze pricing trends for Mercedes-Benz E450 Coupes from online marketplaces, utilizing machine learning to develop predictive models to estimate prices based on factors such as mileage and vehicle age.
                 <strong>Methodology:</strong>
                 <ul>
                     <li>Designed and implemented web scraping scripts using BeautifulSoup and requests to extract comprehensive data on Mercedes-Benz E450 Coupe listings from car marketplaces, targeting the Boston and Beverly Hills regions.</li>
